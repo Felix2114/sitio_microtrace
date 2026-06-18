@@ -1,6 +1,5 @@
-import { QrCode } from "lucide-react";
-
 const logoUrl = new URL("../../../logo.jpeg", import.meta.url).href;
+const siteUrl = "https://microtrace-ai.onrender.com/";
 
 export function Footer() {
   return (
@@ -39,25 +38,26 @@ export function Footer() {
             <div className="space-y-1.5 text-[#7BA8C4] text-sm">
               <p>Proyecto de ingeniería de software</p>
               <p>Área: Health Tech · AI Research</p>
-              <p className="text-[#00A6A6] font-medium">ExpoCiencias 2025</p>
+              <p className="text-[#00A6A6] font-medium">ExpoCiencias 2026</p>
             </div>
           </div>
 
-          {/* QR / Links */}
+          {/* Links */}
           <div className="flex flex-col gap-3">
             <h4 className="text-[#E8F4F8]" style={{ fontSize: "0.9rem" }}>
               Acceso rápido
             </h4>
-            <div className="flex items-center gap-3">
-              <div className="w-16 h-16 rounded-lg border border-[#00A6A6]/30 bg-[#0D2540] flex items-center justify-center">
-                <QrCode size={28} className="text-[#00A6A6]" />
-              </div>
-              <div className="text-[#7BA8C4] text-xs leading-relaxed">
-                <p>Escanea el QR</p>
-                <p>para ver el demo</p>
-                <p className="text-[#00A6A6] font-mono mt-1">microtrace-ai.onrender.com</p>
-              </div>
-            </div>
+            <a
+              href={siteUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex w-fit items-center rounded-lg border border-[#00A6A6]/30 px-4 py-2 text-sm font-semibold text-[#00E5FF] transition-colors hover:bg-[#00A6A6]/10"
+            >
+              microtrace-ai.onrender.com
+            </a>
+            <p className="max-w-xs text-[#7BA8C4] text-xs leading-relaxed">
+              Sitio oficial del prototipo y demo del proyecto.
+            </p>
           </div>
         </div>
 
@@ -67,10 +67,10 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-[#7BA8C4]/50 text-xs">
-            © 2025 MicroTrace AI · Todos los derechos reservados
+            © 2026 MicroTrace AI · Todos los derechos reservados
           </p>
           <p className="text-[#7BA8C4]/40 text-xs text-center">
-            Herramienta de apoyo a la investigación · No emite diagnóstico médico
+            ExpoCiencias 2026 · Herramienta de apoyo a la investigación
           </p>
           <div className="flex gap-4">
             {["Problema", "Solución", "Ciencia", "Demo"].map((label) => (

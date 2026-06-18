@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ArrowRight, QrCode } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const siteUrl = "https://microtrace-ai.onrender.com/";
 const logoUrl = new URL("../../../logo.jpeg", import.meta.url).href;
@@ -67,7 +67,7 @@ export function CTASection() {
             integrada.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
+          <div className="flex flex-wrap justify-center gap-4 mb-2">
             <motion.a
               href={siteUrl}
               target="_blank"
@@ -92,14 +92,6 @@ export function CTASection() {
             </motion.div>
           </div>
 
-          {/* QR placeholder */}
-          <div className="flex flex-col items-center gap-3">
-            <div className="w-28 h-28 rounded-xl border-2 border-[#00A6A6]/40 bg-[#0D2540] flex flex-col items-center justify-center gap-2">
-              <QrCode size={40} className="text-[#00A6A6]" />
-              <span className="text-[#7BA8C4] text-xs font-mono">QR Code</span>
-            </div>
-            <p className="text-[#7BA8C4] text-xs">Escanea para acceder al demo</p>
-          </div>
         </motion.div>
       </div>
 
